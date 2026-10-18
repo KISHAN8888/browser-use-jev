@@ -1,0 +1,24 @@
+[project]
+name = "myjev"
+version = "0.1.0"
+description = "Open browser-decision dataset and model in TypeSafe Jev (browser-use/jev-ultrafast) request format"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = ["playwright", "datasets", "huggingface_hub", "tqdm", "httpx"]
+
+[project.optional-dependencies]
+model = ["torch", "transformers==5.18.0", "peft==0.21.2", "accelerate==1.15.0", "numpy"]
+serve = ["fastapi", "uvicorn"]
+modal = ["modal"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["myjev*"]
+
+[tool.setuptools.package-data]
+myjev = ["vendor/*.js", "vendor/LICENSE-*"]

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Secrets (copy .env.example to .env)
+.env
+.env.*
+!.env.example
+
+# Data, runs and checkpoints (the dataset and model live on Hugging Face)
+data/
+runs/
+runs_modal/
+*.tar.gz
+*.safetensors
+*.pt
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/
