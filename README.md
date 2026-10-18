@@ -4,8 +4,8 @@ An open decision model and dataset for [browser-use/jev-ultrafast](https://githu
 It answers the same typed questions that TypeSafe's hosted **Jev** model answers on every browser step (which
 operation, which element), in the same request/response format, so jev-ultrafast can use it by changing one URL.
 
-- Model: [`<hf-user>/myjev-decision-4b`](https://huggingface.co/<hf-user>/myjev-decision-4b) (Qwen3-4B-Base + LoRA + scoring head)
-- Dataset: [`<hf-user>/myjev-browser-decisions`](https://huggingface.co/datasets/<hf-user>/myjev-browser-decisions)
+- Model: [`Mlchemist/myjev-decision-4b`](https://huggingface.co/Mlchemist/myjev-decision-4b) (Qwen3-4B-Base + LoRA + scoring head)
+- Dataset: [`Mlchemist/myjev-browser-decisions`](https://huggingface.co/datasets/Mlchemist/myjev-browser-decisions)
   (21,646 train steps on 301 websites + a frozen 3,345-step benchmark on 84 unseen websites)
 
 ## Why
@@ -71,14 +71,14 @@ Requires Python ≥ 3.12. A CUDA GPU is recommended for inference (the 4B base m
 runs in fp32 and needs ~16 GB RAM).
 
 ```bash
-git clone https://github.com/<github-user>/myjev && cd myjev
+git clone https://github.com/KISHAN8888/myjev && cd myjev
 uv venv --python 3.12 && source .venv/bin/activate
 uv pip install -e ".[model,serve]"         # add ,modal,dev for training on Modal / running tests
 
 # model checkpoint (adapter + head + tokenizer + config; the base model downloads automatically)
-huggingface-cli download <hf-user>/myjev-decision-4b --local-dir ckpt/myjev-decision-4b
+huggingface-cli download Mlchemist/myjev-decision-4b --local-dir ckpt/myjev-decision-4b
 # dataset
-huggingface-cli download <hf-user>/myjev-browser-decisions --repo-type dataset --local-dir data/hf
+huggingface-cli download Mlchemist/myjev-browser-decisions --repo-type dataset --local-dir data/hf
 ```
 
 Score the benchmark:
@@ -179,8 +179,8 @@ datasets if you use the data.
 ```bibtex
 @misc{myjev2026,
   title  = {myjev: an open decision model for jev-ultrafast browser agents},
-  author = {<github-user>},
+  author = {KISHAN8888},
   year   = {2026},
-  url    = {https://github.com/<github-user>/myjev}
+  url    = {https://github.com/KISHAN8888/myjev}
 }
 ```
