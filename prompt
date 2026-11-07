@@ -1,0 +1,133 @@
+You are an expert front-end developer AND a friendly coding teacher for kids. Build me a complete personal "All About Me" website as ONE file called index.html (HTML + CSS + JavaScript inside it). The result must look polished, playful and UNIQUE, like a real designed website, NOT a plain default page and NOT a generic stack of cards.
+
+=== IMPORTANT: NEVER ASK QUESTIONS ===
+- Do NOT ask me any questions. Do NOT wait for more information. Always build the full website in your very first reply.
+- If any box below is empty, still has its [BRACKET] text, or says something like "skip" or "idk", fill it in yourself with a fun, kid-friendly choice that fits my theme and the rest of my details. Never leave a gap, a placeholder or "[BRACKET]" text on the page.
+- Examples: missing tagline = write a cheerful one. Missing hobbies and fun facts = pick 5 fun ones. Missing theme = pick a fun one. Missing colours = choose 3 that go well together. Missing name = use "Awesome Kid". Missing extra sections = skip them.
+- Mark every value you made up with a ✏️ comment in the code ("✏️ I chose this for you, change it to your own!").
+- At the end of your reply, add one line: "Filled in by me: [list of things I had to make up]" (write "nothing" if I filled in everything).
+
+=== PART 1: ABOUT ME ===
+First name: [FIRST NAME]
+Nickname: [NICKNAME or "none"]
+Age: [AGE]
+Birthday month: [MONTH]
+Tagline: [ONE LINE ABOUT YOU]
+Favourite colour: [COLOUR]
+Favourite food: [FOOD]
+Favourite animal: [ANIMAL]
+Favourite game: [GAME]
+Favourite subject: [SUBJECT]
+Favourite movie or show: [MOVIE/SHOW]
+My hobbies and fun facts (5 to 8, any mix. Optionally add a dash and a detail, e.g. "Drawing - I have drawn 100 cats"): [ITEM 1] / [ITEM 2] / [ITEM 3] / [ITEM 4] / [ITEM 5]
+When I grow up: [MY DREAM]
+
+=== PART 2: MY CARTOON PICTURE ===
+My cartoon picture is a file called image.png, saved in the same folder as index.html.
+
+=== PART 3: MY DESIGN CHOICES (be creative, invent your own!) ===
+Theme: [YOUR THEME]
+Main colour: [COLOUR 1]
+Accent colour: [COLOUR 2]
+Pop colour: [COLOUR 3]
+Font mood: [YOUR FONT MOOD]
+Shape style (the shape of corners and outlines): [e.g. super round, hearts and stars, wobbly hand-drawn]
+Page background: [YOUR BACKGROUND]
+Card style (what the info boxes look like): [e.g. stickers with shadows, glowing neon, glass]
+Animation: [YOUR ANIMATION]
+
+=== PART 4: SECTIONS (in this order) ===
+1. Hero (name, nickname, tagline, my cartoon picture)
+2. About me
+3. My favourite things (each with a big emoji)
+4. My hobbies and fun facts (flip cards)
+5. When I grow up
+6. MY OWN EXTRA SECTIONS (placed here, delete these lines if I don't want any):
+   - Section name: [NAME] | What to put in it: [DETAILS]
+   - Section name: [NAME] | What to put in it: [DETAILS]
+Footer: "Made by [FIRST NAME] with the help of AI"
+
+=== PART 5: LAYOUT (YOU CHOOSE, using this rule) ===
+Do not ask me which layout I want. Choose it using this rule:
+1. Count the letters in my first name.
+2. Add my age.
+3. Add the number of my birthday month (January = 1 ... December = 12).
+4. Divide the total by 12 and take the remainder. Add 1. That is my layout number.
+(If my name, age or birthday month is missing, use 7 for the missing numbers.)
+Use the layout with that number:
+ 1. SIDEBAR PROFILE: fixed side panel with my picture, name and menu; sections scroll on the right. On phones the sidebar becomes a top bar.
+ 2. SCRAPBOOK COLLAGE: sections look like photos, notes and stickers stuck on a page, in different sizes, slightly rotated and overlapping a little (never hiding text).
+ 3. COMIC BOOK: sections are comic panels in an uneven grid with thick borders, speech bubbles and sound-effect words.
+ 4. BENTO GRID: sections are tiles of different sizes (wide, tall, small, big) fitted together in one grid.
+ 5. TABS: only one section shows at a time. A row of big tab buttons switches between them.
+ 6. ADVENTURE PATH: sections are "levels" along a winding zig-zag path down the page, with a connecting trail and level badges.
+ 7. HORIZONTAL SCROLL: sections are full-height panels side by side that scroll sideways (with arrow buttons and a progress bar). On phones it can scroll vertically instead.
+ 8. MAGAZINE: big headline, multi-column text, pull quotes, a cover-style hero and "issue" style details.
+ 9. PHONE APP STYLE: looks like a mobile app with a bottom menu bar; each menu item shows a different screen. On laptops, show the app in a centred phone-shaped frame.
+10. BULLETIN BOARD: notes, cards and photos pinned to a board with pins, tape and doodles, at different angles.
+11. ORBIT MAP: my picture in the centre and the sections as clickable bubbles around it; clicking opens that section. On phones the bubbles become a simple list.
+12. TIMELINE: one long line down the middle of the page with sections hanging off it on alternate sides. On phones, all sections sit on one side.
+At the end, tell me (in one short line) which layout number and name you chose.
+
+LAYOUT RULES
+- Build the page EXACTLY as my layout describes. The layout, not just the colours, must make my site look different from other people's.
+- Combine my layout with my Theme so they feel like one idea.
+- Choose a hero style and menu style that fit my layout. If a menu exists, every item must work.
+- Different sections should have different sizes, shapes and positions where my layout allows. Not every section should look like the same box.
+- Sections follow the order in Part 4 (where my layout is a path, timeline, orbit or tabs, place them in that order).
+- Everything must be reachable and readable on a phone-sized screen. Nothing cut off.
+
+=== PART 6: HOW EACH THING MUST BE BUILT ===
+STYLE
+- At the very top of the CSS, add a block commented "CUSTOMIZE ME!" with CSS variables: --main, --accent, --pop, --font-title, --font-body, --roundness, --border-size, --paper, --card, --ink. EVERY colour, font and radius in the page must come from these variables.
+- Use my 3 colours (main, accent, pop) from Part 3. YOU choose the page background (--paper), card colour (--card) and text colour (--ink) so they match my theme and my 3 colours, with strong contrast so all text is easy to read.
+- Colours are fixed. NO dark mode, NO colour picker, NO colour-remix button.
+- Colours must be valid hex codes (like #ff6b6b). Never use made-up colour names.
+- Fonts: load ONE title font and ONE easy body font from Google Fonts using a <link> tag, matching my font mood, with safe fallback fonts. This is the ONLY external resource allowed.
+- Backgrounds and decorations must be made with CSS (gradients, patterns), emojis and SVG. The ONLY image file allowed is image.png.
+- Apply my Theme strongly and visibly: theme emojis, themed decorations around the page, themed colours and shapes. Apply my shape style and card style to all boxes.
+- Big friendly headings using clamp(). Add <meta name="viewport" content="width=device-width, initial-scale=1">.
+- Buttons: big, easy to tap, with a visible pressed effect and visible keyboard focus.
+
+MY CARTOON PICTURE
+- Show it with <img src="image.png" alt="Cartoon of [first name]"> in the hero, inside a themed frame (round, badge, comic panel, whatever fits the theme). Keep its proportions (object-fit: cover or contain).
+- If image.png is missing, show a fallback circle with the first letter of my name instead, so the page never looks broken. Add a ✏️ comment explaining that image.png must be in the same folder as index.html.
+- When someone clicks the picture, it does a fun wiggle or bounce animation. Never make it disappear.
+
+HOBBIES AND FUN FACTS (FLIP CARDS)
+- Each item I wrote becomes one flip card, built as a <button>.
+- Front: a fitting big emoji and the item name (the part before the dash).
+- Back: the detail I wrote after the dash. If I wrote no detail, write one short, cheerful, kid-friendly line about that item yourself and mark it with a ✏️ comment.
+- Real 3D flip: perspective, transform-style: preserve-3d, backface-visibility: hidden. Text must never appear mirrored.
+- NO scores, NO progress bars.
+
+ANIMATION
+- My animation must be clearly visible and actually work. If it needs a trigger, add it. Created elements must be removed afterwards. Respect prefers-reduced-motion.
+
+=== PART 7: SAFETY ===
+Use ONLY my first name. Never include surname, school, address, phone, email or real photo. Keep everything kind and kid-friendly.
+
+=== PART 8: CODE TEACHING STYLE ===
+Write simple beginner-friendly comments above each part. Mark every line a kid can safely edit with a ✏️ emoji.
+
+=== PART 9: BEFORE YOU ANSWER, CHECK YOURSELF ===
+Silently check every item and fix the code if any fails:
+[ ] I asked NO questions and built the full website right away
+[ ] No empty gaps, "[BRACKET]" text or placeholders show on the page; anything missing was filled in by me and marked with ✏️
+[ ] I calculated the layout number correctly and built that exact layout
+[ ] The page is NOT just a centred column of identical cards (unless the layout truly is that)
+[ ] Sections appear in the Part 4 order, including my extra sections
+[ ] Menu (if any) works
+[ ] The theme is clearly visible (colours, fonts, shapes, decorations)
+[ ] Background, card and text colours are chosen from my 3 colours and are easy to read
+[ ] image.png shows via <img>, has a fallback, and wiggles on click
+[ ] My animation works
+[ ] Every hobby / fun fact is a flip card that truly flips, text not mirrored, and there are no scores or bars
+[ ] Only valid hex colours, no external images except image.png, no alert(), no colour pickers or dark mode
+[ ] Everything is reachable and readable on a phone-sized screen
+
+=== PART 10: OUTPUT FORMAT ===
+Give me ONE code block with the full index.html and nothing else before it. After it, write these lines:
+"Layout chosen: [number and name]"
+"Filled in by me: [list, or nothing]"
+Then add a short section "How to make it yours" with 5 easy edits I can try in the code, in simple words a 10-year-old understands.
